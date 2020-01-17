@@ -49,6 +49,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 781536c1865cb154e940a2bd773716f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RocketRot: 200
+  RocketThrust: 1000
 --- !u!54 &7538750264618609976
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -57,13 +59,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254646920478699131}
   serializedVersion: 2
-  m_Mass: 0.15
-  m_Drag: 0
+  m_Mass: 1
+  m_Drag: 0.25
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 56
   m_CollisionDetection: 0
 --- !u!82 &8330478666934190746
 AudioSource:
@@ -281,8 +283,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254646921318094198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.6060003, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 1.783, z: 0.01}
+  m_LocalScale: {x: 0.71128, y: 0.49947178, z: 1}
   m_Children: []
   m_Father: {fileID: 1254646920478699128}
   m_RootOrder: 3
@@ -294,7 +296,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254646921318094198}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1254646921318094197
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -406,7 +408,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e5db041323d1b95489252567afbe0af1, type: 2}
+  - {fileID: 2100000, guid: 17e3801e9a2da334296feff08962296a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -499,7 +501,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e5db041323d1b95489252567afbe0af1, type: 2}
+  - {fileID: 2100000, guid: 17e3801e9a2da334296feff08962296a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
